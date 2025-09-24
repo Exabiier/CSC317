@@ -31,6 +31,40 @@
             </ul>
         </section>
 
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>My most proud projects:</p>
+            
+                <article>Project A: I built a applicaiton where users can view houses </article>
+                <article>Project B: I built a tinder clone wherer users can talk and chat to each other </article>
+                <li>Project C:</strong> I built a deliveroo clone where users can buy there own food. </li>
+            
+        </section> 
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at:</p>
+            <ul>
+                <li>Email: Exabiiertravels@gmail.com</li>
+            </ul> 
+        </section>
+
+    </main>
+    <!-- Will make footer look pretty later -->
+    <footer>
+        <a href= "#about">About Me</a>
+        <a href= "#skills">Projects</a>
+        <a href= "#projects">Contact</a>
+        <a href= "#contact">Resume</a>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
 
       
         
