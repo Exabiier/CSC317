@@ -6,7 +6,7 @@
 <body>
     <!-- This section will have more detail the left side will have have a logo and the nav bar will be put on the right, but for now we will keep it bare. the nav bar will have links that will drop to the section of the nave bar -->
     <header>
-       <h1> Exabiier Bars </h1>
+       
        <nav>
         <a href= "#about">About Me</a>
         <a href= "#skills">Projects</a>
@@ -17,6 +17,8 @@
 
     <main>
         <section id="about">
+            <h1> Exabiier Bars </h1>
+            <img src="profile.jpg" alt="Profile Picture" width="150" height="150">
             <h2>About Me</h2>
             <p>Hello, I'm a veternan on a mission to help others through my craft of web development. I have a wide range of experance and I am passionate on how to make user interfaces look outstanding.</p>
         </section>
