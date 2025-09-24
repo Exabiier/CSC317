@@ -3,6 +3,36 @@
 <head>
     <meta charset="UTF-8">
 </head>
+<body>
+    <!-- This section will have more detail the left side will have have a logo and the nav bar will be put on the right, but for now we will keep it bare. the nav bar will have links that will drop to the section of the nave bar -->
+    <header>
+       <h1> Exabiier Bars </h1>
+       <nav>
+        <a href= "#about">About Me</a>
+        <a href= "#skills">Projects</a>
+        <a href= "#projects">Contact</a>
+        <a href= "#contact">Resume</a>
+       </nav>
+    </header>
 
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm a veternan on a mission to help others through my craft of web development. I have a wide range of experance and I am passionate on how to make user interfaces look outstanding.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>I have experience in the following areas:</p>
+            <ul>
+                <li> Programing Laungages: HTML, CSS, JavaScript, TypeScript, Java</li>
+                <li> Frameworks and Libraries: React, Node.js, Express, Tailwind CSS, Next.js</li>
+                <li> Tools: Git, GitHub, VS Code</li>
+            </ul>
+        </section>
+
+
+      
+        
 
 
