@@ -1,0 +1,3 @@
+## Joseph Altareb's AI Prompt to CHATGPT
+
+Can you help me make a style sheet for this html page? I want to have a Halloween/fall color palate, with a responsive layout and navigation bar fixed at the top of the screen. Have the background be a light orange color, and the accents be dark brown. Fill in the gaps with a third color. Also, make the skills and projects section sit together on the same row in a "card" type of layout, and have the theme switcher sit in a fixed position on the bottom right hand side of the page. Give all images and sections a round border, with a thin shadow behind them. Thank you!

@@ -1,0 +1,245 @@
+/* AI-2 Fall Theme*/
+
+
+/* AI-2 Fall Theme (Updated) */
+
+/* General page styling */
+body {
+  background-color: #000;
+  color: #b5651d;
+  font-family: "Georgia", serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* ------------------------------ */
+/* NAVIGATION BAR */
+/* ------------------------------ */
+
+nav {
+  background-color: #1a0d00; /* deep brown-black */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(255, 123, 0, 0.3); /* warm orange glow */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo SVG */
+.nav-logo svg {
+  fill: #ff7b00;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo svg:hover {
+  transform: scale(1.1);
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #ff7b00;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #b5651d;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d35400;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger icon for mobile */
+.nav-icon {
+  display: none;
+  color: #ff7b00;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-icon {
+    display: block;
+  }
+}
+
+/* ------------------------------ */
+/* HEADER / PROFILE IMAGE */
+/* ------------------------------ */
+
+header {
+  margin-top: 2rem;
+}
+
+#home img {
+  max-width: 300px;
+  width: 90%;
+  height: auto;
+  border-radius: 50%; /* circular image */
+  border: 4px solid #ff7b00;
+  box-shadow: 0 0 20px rgba(255, 123, 0, 0.4);
+  margin-top: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#home img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 140, 0, 0.6);
+}
+
+#home h1 {
+  color: #ff7b00;
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+}
+
+#home img{
+  display:block;
+  margin: 0.5rem auto 0.75rem;
+  border-radius: 16px;
+  border: 3px solid var(--accent);
+  box-shadow: 0 10px 24px var(--shadow), 0 0 0 6px rgba(255,122,0,0.08);
+}
+
+/* ------------------------------ */
+/* SECTION STYLES */
+/* ------------------------------ */
+
+section {
+  margin: 3rem auto;
+  width: 80%;
+  text-align: center;
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 123, 0, 0.2);
+}
+
+section h2 {
+  background-color: #ff7b00;
+  color: #3b0a00;
+  font-size: 3em;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Subheadings (h3) */
+h3 {
+  color: #a93226;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Paragraphs */
+p {
+  color: #b5651d;
+  font-size: 2.4em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+ul li {
+  margin: 0.8rem 0;
+  color: #b5651d;
+  font-size: 2.4em;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+ul ul {
+  margin-top: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+ul ul li {
+  display: block;
+  border: none;
+  font-size: 1.2em;
+  color: #d35400;
+}
+
+/* Links */
+a {
+  color: #b5651d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+/* Section separation */
+section:not(:last-of-type) {
+  border-bottom: 2px solid #a93226;
+  padding-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  background-color: #1a0d00;
+  color: #ff7b00;
+  box-shadow: 0 -4px 15px rgba(255, 123, 0, 0.2);
+}
