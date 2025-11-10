@@ -1,0 +1,272 @@
+/* styles.css 
+ * Group 2: Aldo, David, Exabiier, Joseph
+ */
+ 
+/* Root variables and themes */
+:root {
+	--primary-color: #FFD93D;
+	--secondary-color: #4F200D;
+	--background-color: #FF9A00;
+	--heading-font: 'Verdana', sans-serif;
+	--body-font: 'Georgia', serif;
+	--border-standard: 40px;
+}
+
+/* Clear all defaults */
+body,button {
+	margin: 0;
+	padding: 0;
+	background: var(--background-color);
+	font-family: var(--body-font);
+} 
+
+a,a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+button {
+	background:none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+h1,h2,h3 {
+	font-family: var(--heading-font);
+}
+
+/* Navigation bar styles */
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.nav-container {
+	background: var(--secondary-color);
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	
+}
+
+.nav-links {
+	display: flex;
+	gap: 2rem;	
+}
+
+.nav-links a, .nav-icon {
+	color: white;
+	/* height: 20px; */
+}
+
+.nav-logo svg {
+	width: auto;
+	height: 40px;
+}
+
+.nav-icon {
+	font-size: 2rem;
+	position: relative;
+	/* transform: translateY(-10px); */
+	display: none;
+}
+/* Header styles */
+header {
+	margin-top: 6rem;
+}
+header section {
+	padding-top: 1rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+img {
+	width: 30%;
+	border: 2px solid;
+	box-shadow: 0 0 7px 2px var(--secondary-color);
+	border-color: var(--secondary-color);
+	border-radius: var(--border-standard);
+}
+/* come back */
+#about{ 
+	flex-basis: 95%;
+    background-color: var(--primary-color);
+    display: flex;              
+    justify-content: space-between;          
+    flex-direction: column;
+    border-radius: var(--border-standard);
+    padding: 1rem 2rem;
+    
+}
+
+#about h2{
+    font-family: var(--heading-font);
+    
+}
+
+/* Theme Switcher sytle */
+.theme-switcher {
+	display: flex;
+	background: var(--secondary-color);
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border-radius: var(--border-standard);
+	border: 2px solid;
+	padding-left: 1rem;
+	margin: 1px;
+	overflow: hidden;
+}
+.theme-switcher h3 {
+	color: white;
+}
+.theme-buttons {
+	display: flex;
+}
+.theme-button {
+	background: var(--background-color);
+	border-radius: 2px;
+	padding: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.active {
+	background: var(--primary-color);
+}
+
+
+/* Section styles */
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+main section {
+	flex-basis: 45%;
+	background: var(--primary-color);
+	border: 2px solid;
+	box-shadow: 0 0 7px 2px var(--secondary-color);
+	border-color: var(--secondary-color);
+	border-radius: var(--border-standard);
+	padding: 0.2rem 1rem;
+	margin: 0.5rem;
+	
+}
+
+
+
+ul {
+	list-style-type: square;
+	
+}
+li::marker {
+	color: var(--secondary-color);
+	content: "\27A4";
+}
+li ul li::marker {
+	content: "\21B3";
+}
+
+/* Responsive Queries */
+@media (min-width: 1050px) {
+	.theme-switcher {
+		display: flex;
+	}
+}
+@media (max-width: 1050px) {
+	html {
+		font-size: 40px;
+	}
+	main section {
+		flex-basis: 95%;
+	}
+	img {
+		width: 50%;
+	}
+	/* Navbar */
+	.theme-switcher {
+		display: none;
+	}
+	.theme-switcher.responsive {
+		display: flex;
+	}
+	.nav-links {
+		display: none;
+	}
+	.nav-container.responsive .nav-links {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		width: 100%;
+	}
+	.nav-icon {
+		display: block;
+		position: absolute;
+		right: 1rem;
+		top: 0.2rem;
+	}
+}
+
+/* Footer styles*/
+footer {
+	background-color: var(--secondary-color);
+	color: white;
+	text-align: center;
+	padding: 1.25rem 1rem;
+	margin-top: 3rem;
+}
+
+footer h2{
+	color: white;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	letter-spacing: .5px;
+}
+
+footer a{
+	display: inline-block;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	padding: 1rem 1rem;
+	margin: 0.5rem;
+	border-radius: 6px;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+footer a:hover{
+	background-color: lightgrey;
+	color: black;
+	animation: buzz-out 0.3s linear 1;
+}
+
+footer span {
+	display: block;
+	margin-top: 1rem;
+	font-size: 0.9rem;
+}
+
+@keyframes buzz-out {
+  0%  { transform: translateX(2px);}
+  10% { transform: translateX(-2px);}
+  20% { transform: translateX(2px);}
+  30% { transform: translateX(-2px);}
+  40% { transform: translateX(2px);}
+  50% { transform: translateX(-1px);}
+  60% { transform: translateX(1px);}
+  70% { transform: translateX(-1px);}
+  80% { transform: translateX(1px);}
+  90% { transform: translateX(0);}
+  100%{ transform: scale(2.25);}
+}
