@@ -64,6 +64,8 @@ function caculator(){
     }
 }
 
+
+
  
 ////////////////////////////////////////////////////////////////// 
 ////////////////////// Input Handlers ///////////////////////
@@ -131,6 +133,43 @@ function handleOperator(operator){
     caculatorState.resetOrNot = true;
 
 }
+
+// Delete the last character of the current input
+function handleDelete(){
+    // just in case there has been a reset, to set 0
+    if (caculatorState.resetOrNot) {
+        caculatorState.curretInput = '0';
+        caculatorState.resetOrNot = false;
+        updateNow();
+        return;
+    }
+
+    // If current display is NaN or already zero
+    if (
+        caculatorState.curretInput === 'NaN' ||
+        caculatorState.curretInput === '0'
+    ) {
+        caculatorState.curretInput = '0';
+        updateNow();
+        return;
+    }
+
+    // delete regular parts in calculator
+    const s = caculatorState.curretInput.toString();
+    let next = s.slice(0, -1);
+
+    // if have an empty space or had a negative sign we just set state to 0
+    if (next === '' || next === '-') next = '0';
+
+    caculatorState.curretInput = next;
+    updateNow();
+}
+
+
+////////////////////////////////////////////
+// Keyboard Event Listener ///////////////////
+////////////////////////////////////////////
+
 
 document.addEventListener('keydown', function(event){
     const key = event.key;
