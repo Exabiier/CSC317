@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/calculator.css">
+</head>
+<body>
+    <!-- this caculator including container  -->
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <!-- will display flex therefore must order them like basic caculator -->
+            <button onclick="clearAll()">C</button>
+            <button onclick="handleDelete()">DEL</button>
+            <button onclick="handleOperator('/')">/</button>
+            <button onclick="handleOperator('*')">*</button>
+
+            <button onclick="handleNumber('7')">7</button>
+            <button onclick="handleNumber('8')">8</button>
+            <button onclick="handleNumber('9')">9</button>
+            <button onclick="handleOperator('-')">-</button>
+
+            <button onclick="handleNumber('4')">4</button>
+            <button onclick="handleNumber('5')">5</button>
+            <button onclick="handleNumber('6')">6</button>
+            <button onclick="handleOperator('+')">+</button>
+
+            <button onclick="handleNumber('1')">1</button>
+            <button onclick="handleNumber('2')">2</button>
+            <button onclick="handleNumber('3')">3</button>
+            <button onclick="caculator()">=</button>
+
+            <button onclick="handleNumber('0')">0</button>
+            <button onclick="handleDecimal()">.</button>
+        </div>
+    </div>
+
+    <script src="scripts/calculator.js"></script>
+
+</body>
+</html>
